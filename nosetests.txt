@@ -1,3 +1,231 @@
+********************* [2024.10.17-09:08:01] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Product Model
+[1;32m- It should Create a product and add it to the database[1;0m
+[1;32m- It should Create a product and assert that it exists[1;0m
+[1;32m- It should Delete a Product[1;0m
+[1;32m- It should raise DataValidationError on deserialize with bad data[1;0m
+[1;32m- It should Find Products by Availability[1;0m
+[1;32m- It should Find Products by Category[1;0m
+[1;32m- It should Find a Product by Name[1;0m
+[1;32m- It should Find a Product by Price[1;0m
+[1;32m- It should raise DataValidationError on update[1;0m
+[1;32m- It should List all Products in the database[1;0m
+[1;32m- It should Read a Product[1;0m
+[1;32m- It should Update a Product[1;0m
+
+Product Service tests
+[1;32m- It should Create a new Product[1;0m
+[1;32m- It should not Create a Product with no Content-Type[1;0m
+[1;32m- It should not Create a Product without a name[1;0m
+[1;32m- It should not Create a Product with wrong Content-Type[1;0m
+[1;32m- It should Get a single Product[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should return the index page[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   19      3    84%   53-56
+service/common/__init__.py             3      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      33      9    73%   48-50, 59-61, 89-91
+service/common/log_handlers.py        12      1    92%   36
+service/common/status.py              64      0   100%
+service/config.py                      7      0   100%
+service/models.py                     92      1    99%   220
+service/routes.py                     40      1    98%   118
+----------------------------------------------------------------
+TOTAL                                277     15    95%
+----------------------------------------------------------------------
+Ran 20 tests in 1.626s
+
+OK
+
+********************* [2024.10.17-08:36:00] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Product Model
+[1;32m- It should Create a product and add it to the database[1;0m
+[1;32m- It should Create a product and assert that it exists[1;0m
+[1;32m- It should Delete a Product[1;0m
+[1;32m- It should raise DataValidationError on deserialize with bad data[1;0m
+[1;32m- It should Find Products by Availability[1;0m
+[1;32m- It should Find Products by Category[1;0m
+[1;32m- It should Find a Product by Name[1;0m
+[1;32m- It should Find a Product by Price[1;0m
+[1;32m- It should raise DataValidationError on update[1;0m
+[1;32m- It should List all Products in the database[1;0m
+[1;32m- It should Read a Product[1;0m
+[1;32m- It should Update a Product[1;0m
+
+Product Service tests
+[1;32m- It should Create a new Product[1;0m
+[1;32m- It should not Create a Product with no Content-Type[1;0m
+[1;32m- It should not Create a Product without a name[1;0m
+[1;32m- It should not Create a Product with wrong Content-Type[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should return the index page[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   19      3    84%   53-56
+service/common/__init__.py             3      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      33      9    73%   48-50, 59-61, 89-91
+service/common/log_handlers.py        12      1    92%   36
+service/common/status.py              64      0   100%
+service/config.py                      7      0   100%
+service/models.py                     92      1    99%   220
+service/routes.py                     33      0   100%
+----------------------------------------------------------------
+TOTAL                                270     14    95%
+----------------------------------------------------------------------
+Ran 19 tests in 1.530s
+
+OK
+
+********************* [2024.10.17-08:34:41] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Product Model
+[1;32m- It should Create a product and add it to the database[1;0m
+[1;32m- It should Create a product and assert that it exists[1;0m
+[1;32m- It should Delete a Product[1;0m
+[1;32m- It should raise DataValidationError on deserialize with bad data[1;0m
+[1;32m- It should Find Products by Availability[1;0m
+[1;32m- It should Find Products by Category[1;0m
+[1;32m- It should Find a Product by Name[1;0m
+[1;32m- It should Find a Product by Price[1;0m
+[1;32m- It should raise DataValidationError on update[1;0m
+[1;32m- It should List all Products in the database[1;0m
+[1;32m- It should Read a Product[1;0m
+[1;32m- It should Update a Product[1;0m
+
+Product Service tests
+[1;32m- It should Create a new Product[1;0m
+[1;32m- It should not Create a Product with no Content-Type[1;0m
+[1;32m- It should not Create a Product without a name[1;0m
+[1;32m- It should not Create a Product with wrong Content-Type[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should return the index page[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   19      3    84%   53-56
+service/common/__init__.py             3      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      33      9    73%   48-50, 59-61, 89-91
+service/common/log_handlers.py        12      1    92%   36
+service/common/status.py              64      0   100%
+service/config.py                      7      0   100%
+service/models.py                     92      1    99%   220
+service/routes.py                     33      0   100%
+----------------------------------------------------------------
+TOTAL                                270     14    95%
+----------------------------------------------------------------------
+Ran 19 tests in 1.295s
+
+OK
+
+********************* [2024.10.17-07:23:11] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Product Model
+[1;32m- It should Create a product and add it to the database[1;0m
+[1;32m- It should Create a product and assert that it exists[1;0m
+[1;32m- It should Delete a Product[1;0m
+[1;32m- It should Find Products by Availability[1;0m
+[1;32m- It should Find Products by Category[1;0m
+[1;32m- It should Find a Product by Name[1;0m
+[1;32m- It should Find a Product by Price[1;0m
+[1;32m- It should raise DataValidationError on update[1;0m
+[1;32m- It should List all Products in the database[1;0m
+[1;32m- It should Read a Product[1;0m
+[1;32m- It should Update a Product[1;0m
+
+Product Service tests
+[1;32m- It should Create a new Product[1;0m
+[1;32m- It should not Create a Product with no Content-Type[1;0m
+[1;32m- It should not Create a Product without a name[1;0m
+[1;32m- It should not Create a Product with wrong Content-Type[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should return the index page[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   19      3    84%   53-56
+service/common/__init__.py             3      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      33      9    73%   48-50, 59-61, 89-91
+service/common/log_handlers.py        12      1    92%   36
+service/common/status.py              64      0   100%
+service/config.py                      7      0   100%
+service/models.py                     92      5    95%   139, 145, 148-149, 220
+service/routes.py                     33      0   100%
+----------------------------------------------------------------
+TOTAL                                270     18    93%
+----------------------------------------------------------------------
+Ran 18 tests in 1.546s
+
+OK
+
+********************* [2024.10.17-07:05:39] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Product Model
+[1;32m- It should Create a product and add it to the database[1;0m
+[1;32m- It should Create a product and assert that it exists[1;0m
+[1;32m- It should Delete a Product[1;0m
+[1;32m- It should Find Products by Availability[1;0m
+[1;32m- It should Find Products by Category[1;0m
+[1;32m- It should Find a Product by Name[1;0m
+[1;32m- It should raise DataValidationError on update[1;0m
+[1;32m- It should List all Products in the database[1;0m
+[1;32m- It should Read a Product[1;0m
+[1;32m- It should Update a Product[1;0m
+
+Product Service tests
+[1;32m- It should Create a new Product[1;0m
+[1;32m- It should not Create a Product with no Content-Type[1;0m
+[1;32m- It should not Create a Product without a name[1;0m
+[1;32m- It should not Create a Product with wrong Content-Type[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should return the index page[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   19      3    84%   53-56
+service/common/__init__.py             3      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      33      9    73%   48-50, 59-61, 89-91
+service/common/log_handlers.py        12      1    92%   36
+service/common/status.py              64      0   100%
+service/config.py                      7      0   100%
+service/models.py                     92      9    90%   139, 145, 148-149, 217-221
+service/routes.py                     33      0   100%
+----------------------------------------------------------------
+TOTAL                                270     22    92%
+----------------------------------------------------------------------
+Ran 17 tests in 1.441s
+
+OK
+
 ********************* [2024.10.15-07:58:09] *********************
 
 

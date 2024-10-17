@@ -27,7 +27,7 @@ import os
 import logging
 import unittest
 from decimal import Decimal
-from service.models import Product, Category, db
+from service.models import Product, Category, db, DataValidationError
 from service import app
 from tests.factories import ProductFactory
 
@@ -136,6 +136,15 @@ class TestProductModel(unittest.TestCase):
         self.assertEqual(products[0].id, original_id)
         self.assertEqual(products[0].description, "testing")
 
+    def test_invalid_id_on_update(self):
+        """It should raise DataValidationError on update """
+        product = ProductFactory()
+        product.id = None
+        product.create()
+        self.assertIsNotNone(product.id)
+        product.id = None
+        self.assertRaises(DataValidationError, product.update)
+
     def test_delete_a_product(self):
         """It should Delete a Product"""
         product = ProductFactory()
@@ -168,6 +177,38 @@ class TestProductModel(unittest.TestCase):
         self.assertEqual(found.count(), count)
         for product in found:
             self.assertEqual(product.name, name)
+
+    def test_find_by_price(self):
+        """It should Find a Product by Price"""
+        products = ProductFactory.create_batch(5)
+        for product in products:
+            product.create()
+        price = products[0].price
+        count = len([product for product in products if product.price == price])
+        found = Product.find_by_price(price)
+        self.assertEqual(found.count(), count)
+        for product in found:
+            self.assertEqual(product.price, price)
+
+    def test_deserialize_dict_with_bad_data(self):
+        """It should raise DataValidationError on deserialize with bad data"""
+        product = Product(name="Fedora", description="A red hat", price=12.50, available=True, category=Category.CLOTHS)
+        product2 = Product()
+        data = product.serialize()
+        data["available"] = "test"
+        data2 = "test"
+        data3 = {}
+        data4 = {
+            "name": "Fedora",
+            "description": "A red hat",
+            "price": 12.50,
+            "available": True,
+            "category": "CARS"
+        }
+        self.assertRaises(DataValidationError, product.deserialize, data)
+        self.assertRaises(DataValidationError, product2.deserialize, data2)
+        self.assertRaises(DataValidationError, product2.deserialize, data3)
+        self.assertRaises(DataValidationError, product2.deserialize, data4)
 
     def test_find_by_availability(self):
         """It should Find Products by Availability"""

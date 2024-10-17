@@ -1,3 +1,53 @@
+********************* [2024.10.17-09:08:01] *********************
+
+Running linting...
+0
+service/routes.py:118:22: E231 missing whitespace after ':'
+1     E231 missing whitespace after ':'
+1
+make: *** [Makefile:25: lint] Error 1
+
+********************* [2024.10.17-08:36:00] *********************
+
+Running linting...
+0
+0
+
+------------------------------------
+Your code has been rated at 10.00/10
+
+
+********************* [2024.10.17-08:34:41] *********************
+
+Running linting...
+0
+tests/test_models.py:145:19: E221 multiple spaces before operator
+1     E221 multiple spaces before operator
+1
+make: *** [Makefile:25: lint] Error 1
+
+********************* [2024.10.17-07:23:11] *********************
+
+Running linting...
+0
+tests/test_models.py:145:19: E221 multiple spaces before operator
+tests/test_models.py:149:5: E303 too many blank lines (2)
+1     E221 multiple spaces before operator
+1     E303 too many blank lines (2)
+2
+make: *** [Makefile:25: lint] Error 1
+
+********************* [2024.10.17-07:05:39] *********************
+
+Running linting...
+0
+tests/test_models.py:145:19: E221 multiple spaces before operator
+tests/test_models.py:149:5: E303 too many blank lines (2)
+1     E221 multiple spaces before operator
+1     E303 too many blank lines (2)
+2
+make: *** [Makefile:25: lint] Error 1
+
 ********************* [2024.10.15-07:58:09] *********************
 
 Running linting...
