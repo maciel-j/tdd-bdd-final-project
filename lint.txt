@@ -1,3 +1,109 @@
+********************* [2024.10.18-08:17:05] *********************
+
+Running linting...
+0
+0
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.98/10, +0.02)
+
+
+********************* [2024.10.18-08:15:20] *********************
+
+Running linting...
+0
+0
+************* Module tests.test_routes
+tests/test_routes.py:35:0: C0411: standard import "from urllib.parse import quote_plus" should be placed before "from service import app" (wrong-import-order)
+
+-----------------------------------
+Your code has been rated at 9.98/10
+
+make: *** [Makefile:26: lint] Error 16
+
+********************* [2024.10.18-08:11:54] *********************
+
+Running linting...
+0
+service/routes.py:153:22: E231 missing whitespace after ':'
+tests/test_routes.py:182:9: F841 local variable 'test_product' is assigned to but never used
+tests/test_routes.py:273:50: W291 trailing whitespace
+tests/test_routes.py:293:9: E265 block comment should start with '# '
+1     E231 missing whitespace after ':'
+1     E265 block comment should start with '# '
+1     F841 local variable 'test_product' is assigned to but never used
+1     W291 trailing whitespace
+4
+make: *** [Makefile:25: lint] Error 1
+
+********************* [2024.10.18-08:09:08] *********************
+
+Running linting...
+0
+service/routes.py:31:1: E302 expected 2 blank lines, found 1
+service/routes.py:147:1: E302 expected 2 blank lines, found 1
+service/routes.py:154:22: E231 missing whitespace after ':'
+service/routes.py:164:1: E302 expected 2 blank lines, found 1
+service/routes.py:187:1: E302 expected 2 blank lines, found 1
+service/routes.py:199:42: W292 no newline at end of file
+tests/test_routes.py:182:9: F841 local variable 'test_product' is assigned to but never used
+tests/test_routes.py:273:50: W291 trailing whitespace
+tests/test_routes.py:293:9: E265 block comment should start with '# '
+1     E231 missing whitespace after ':'
+1     E265 block comment should start with '# '
+4     E302 expected 2 blank lines, found 1
+1     F841 local variable 'test_product' is assigned to but never used
+1     W291 trailing whitespace
+1     W292 no newline at end of file
+9
+make: *** [Makefile:25: lint] Error 1
+
+********************* [2024.10.18-08:08:41] *********************
+
+Running linting...
+0
+service/routes.py:30:1: E302 expected 2 blank lines, found 1
+service/routes.py:146:1: E302 expected 2 blank lines, found 1
+service/routes.py:153:22: E231 missing whitespace after ':'
+service/routes.py:163:1: E302 expected 2 blank lines, found 1
+service/routes.py:186:1: E302 expected 2 blank lines, found 1
+service/routes.py:198:42: W292 no newline at end of file
+tests/test_routes.py:182:9: F841 local variable 'test_product' is assigned to but never used
+tests/test_routes.py:273:50: W291 trailing whitespace
+tests/test_routes.py:293:9: E265 block comment should start with '# '
+1     E231 missing whitespace after ':'
+1     E265 block comment should start with '# '
+4     E302 expected 2 blank lines, found 1
+1     F841 local variable 'test_product' is assigned to but never used
+1     W291 trailing whitespace
+1     W292 no newline at end of file
+9
+make: *** [Makefile:25: lint] Error 1
+
+********************* [2024.10.18-08:04:59] *********************
+
+Running linting...
+0
+service/routes.py:29:1: E303 too many blank lines (3)
+service/routes.py:32:1: E302 expected 2 blank lines, found 3
+service/routes.py:148:1: E302 expected 2 blank lines, found 1
+service/routes.py:154:22: E231 missing whitespace after ':'
+service/routes.py:163:1: E302 expected 2 blank lines, found 1
+service/routes.py:190:1: E302 expected 2 blank lines, found 1
+service/routes.py:202:42: W292 no newline at end of file
+tests/test_routes.py:182:9: F841 local variable 'test_product' is assigned to but never used
+tests/test_routes.py:273:50: W291 trailing whitespace
+tests/test_routes.py:293:9: E265 block comment should start with '# '
+1     E231 missing whitespace after ':'
+1     E265 block comment should start with '# '
+4     E302 expected 2 blank lines, found 3
+1     E303 too many blank lines (3)
+1     F841 local variable 'test_product' is assigned to but never used
+1     W291 trailing whitespace
+1     W292 no newline at end of file
+10
+make: *** [Makefile:25: lint] Error 1
+
 ********************* [2024.10.17-09:08:01] *********************
 
 Running linting...
