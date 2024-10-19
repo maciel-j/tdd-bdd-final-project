@@ -1,3 +1,58 @@
+********************* [2024.10.19-07:32:44] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Product Model
+[1;32m- It should Create a product and add it to the database[1;0m
+[1;32m- It should Create a product and assert that it exists[1;0m
+[1;32m- It should Delete a Product[1;0m
+[1;32m- It should raise DataValidationError on deserialize with bad data[1;0m
+[1;32m- It should Find Products by Availability[1;0m
+[1;32m- It should Find Products by Category[1;0m
+[1;32m- It should Find a Product by Name[1;0m
+[1;32m- It should Find a Product by Price[1;0m
+[1;32m- It should raise DataValidationError on update[1;0m
+[1;32m- It should List all Products in the database[1;0m
+[1;32m- It should Read a Product[1;0m
+[1;32m- It should Update a Product[1;0m
+
+Product Service tests
+[1;32m- It should Create a new Product[1;0m
+[1;32m- It should not Create a Product with no Content-Type[1;0m
+[1;32m- It should not Create a Product without a name[1;0m
+[1;32m- It should not Create a Product with wrong Content-Type[1;0m
+[1;32m- It should Delete a Product[1;0m
+[1;32m- It should Get a single Product[1;0m
+[1;32m- It should Get a list of Products[1;0m
+[1;32m- It should return NOT found a single Product[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should return the index page[1;0m
+[1;32m- It should Query Products by availability[1;0m
+[1;32m- It should Query Products by category[1;0m
+[1;32m- It should Query Products by name[1;0m
+[1;32m- It should Update an existing Product[1;0m
+[1;32m- It should Update an existing Product[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   19      3    84%   53-56
+service/common/__init__.py             3      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      33      6    82%   59-61, 89-91
+service/common/log_handlers.py        12      1    92%   36
+service/common/status.py              64      0   100%
+service/config.py                      7      0   100%
+service/models.py                     92      1    99%   220
+service/routes.py                     81      0   100%
+----------------------------------------------------------------
+TOTAL                                318     11    97%
+----------------------------------------------------------------------
+Ran 28 tests in 1.291s
+
+OK
+
 ********************* [2024.10.18-08:17:05] *********************
 
 
